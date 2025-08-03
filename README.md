@@ -28,7 +28,11 @@ This tool allows users to manage contacts easily with options to **add**, **dele
 
 ## 🗂 Project Structure
 
-📁 ContactManager/ ├── logic.py # Core contact management logic ├── gui.py # GUI implementation ├── contacts.txt # Auto-generated contact storage └── README.md # Project documentation
+📁 ContactManager/
+├── logic.py # Core contact management logic
+├── gui.py # GUI implementation
+├── contacts.txt # Auto-generated contact storage
+└── README.md # Project documentation
 
 
 ---
