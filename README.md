@@ -1,60 +1,37 @@
-markdown
-# 📒 Contact Manager — Python & Tkinter
+# 📒 Contact List App – PyQt6 Version
 
-A simple yet powerful Contact Manager application built using **Python** and **Tkinter**.  
-This tool allows users to manage contacts easily with options to **add**, **delete**, and **search** names and phone numbers through a clean graphical interface.
+A simple and interactive contact management tool built with **PyQt6**.
 
----
+> ⚠️ This is a PyQt-based version of the original project previously built using Tkinter.  
+> You can find the Tkinter version in the `tkinter-version` branch.
 
-## 🚀 Features
+## 🧩 Features
 
-- Add new contacts with name and phone number
-- Delete existing contacts
-- Search contacts by name or phone
-- Store contacts persistently in a `.txt` file
-- Easy-to-use graphical interface using Tkinter
+- Add, delete, and search contacts
+- Search by name or phone number
+- User interface designed with Qt Designer (.ui file)
+- Contacts stored locally in a txt file
 
----
-
-## 🧠 Technologies Used
-
-| Language  | Purpose             |
-|-----------|---------------------|
-| Python 🐍 | Backend & GUI logic |
-| Tkinter   | Graphical interface |
-| File I/O  | Local contact storage |
-
----
-
-## 🗂 Project Structure
-
-📁 ContactManager/
-  ├── logic.py # Core contact management logic
-  ├── gui.py # GUI implementation
-  ├── contacts.txt # Auto-generated contact storage
-  └── README.md # Project documentation
-
-
----
-
-## 🛠 How to Run
-
-> Make sure you have Python 3 installed.
+## 🚀 Getting Started
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/contact-manager.git
-cd contact-manager
+git clone https://github.com/HemnAzizi578/Contact_List.git
+cd contact-list
+pip install PyQt6
+python main.py
 
-# Run the GUI application
-python gui.py
-Contacts will be automatically saved to contacts.txt in the same folder.
+📁 Project Structure
+contact-list/
+├── main.py              # Main application logic with PyQt UI integration
+├── contact_form.ui      # UI layout file created in Qt Designer
+├── logic.py             # Core functions: add, delete, search, load/save contacts
+└── contacts.txt        # Auto-generated file for storing contact data
 
+💡 Future Ideas
+Edit contact information directly
 
-📬 Contributing
-Pull requests are welcome! If you'd like to suggest improvements or new features (like editing contacts or importing/exporting to CSV), feel free to open an issue.
+Validate phone number input
 
-📄 License
-This project is open-source and available under the MIT License.
+Migrate to a database (SQLite or similar)
 
 Made with ❤️ by Hemn

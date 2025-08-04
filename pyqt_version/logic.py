@@ -40,11 +40,18 @@ def list_contacts(contacts):
         pass  # No action defined yet
 
 # Search for contacts by name or phone number
-def search_contacts(contacts, query):
-    found = False
+def search_by_name(contacts, query):
+    results = {}
     for name, phone in contacts.items():
-        if query.lower() in name.lower() or query in phone:
-            found = True  # Match found (but not displayed)
-    if not found:
-        # Do nothing if no match found
-        pass
+        if query.lower() in name.lower():
+            results[name] = phone
+    return results
+
+def search_by_phone(contacts, query):
+    results = {}
+    for name, phone in contacts.items():
+        if query in phone:
+            results[name] = phone
+    return results
+
+
